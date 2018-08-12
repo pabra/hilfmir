@@ -1,0 +1,7 @@
+{
+    "helpers": {},
+    "seekers": {},
+    "ssh_port": 22,
+    "ssh_proxy": "hilfmir.peppnet.de",
+    "ssh_user": "hilfmir"
+}

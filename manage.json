@@ -1,0 +1,17 @@
+{
+    "helpers": {
+        "helper": {
+            "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYYJF8XMhMhqqZuX0PrRRk2t9qMznNoim4e9wGP33FEPmvHm+W6hie62t5L+NQhlf+IE7QrKxP0q6I+h65mWuEhmpmzfxXaBJ8GqPtP2Z3PB+tIFt9yfs97Xm8pp7sfKfOYArGiEXvJ76CC/jSSPvKkBmIAbAWoiAmOk8mOYb4SWeYCAEgw69EtR1UnfSacz0JFSzNyCHXJdTIWvNetmIXrUjLVBqR4/AeWBcAe8BzZzSSnmCSmmBtEwgIsAlb2+p/L6Qnqex4On1pVDP2pZwCXhSiSW4th2tJCJkxPT6rl99nLzcOmWXKV8voj6icpHvTH88INpLlFKV85055g4ab"
+        }
+    },
+    "seekers": {
+        "seeker": {
+            "port": 41300,
+            "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8L5BLfTthezYVlKnasY3aux5EiEdvyAYMIouQ68tqF+NfrM5cinYbTEOhvXXP2mGmfqHCJvBsMOz1HVP2uXvbk7hX6HlfFSUH4UoqYu4yecQGk48TgVSzCM7axJjMbLxjjfjMNqzMV5tC6pWzljVUE1On9OYiHacJR+H1ArrZoOmmg3SkIwP3Nk4U60mInOIl2FbmSBj6PswMpZRv6VTyTBeba0Mpa3dk0pewj1AB8R7BrHWqMeT9RaOU727dDxsCKh0jfR/Et1yaa/50bJF5MF0NuWV+W04mAsNlxc23Vb+xpMgHXtka6dlMm2xc5Ro0hNuOTi9l/WSnC+jA0b5P",
+            "user_name": "seeker"
+        }
+    },
+    "ssh_port": 22,
+    "ssh_proxy": "ssh-proxy",
+    "ssh_user": "hilfmir"
+}

@@ -1,0 +1,35 @@
+version: '3'
+services:
+
+    ssh-proxy:
+        build: proxy
+        networks:
+            - helper-net
+            - seeker-net
+        tty: true
+        volumes:
+            - ../:/tmp/hilfmir/
+
+    seeker:
+        build: seeker
+        networks:
+            - seeker-net
+        tty: true
+        depends_on:
+            - ssh-proxy
+        volumes:
+            - ../:/tmp/hilfmir/
+
+    helper:
+        build: helper
+        networks:
+            - helper-net
+        tty: true
+        depends_on:
+            - ssh-proxy
+        volumes:
+            - ../:/tmp/hilfmir/
+
+networks:
+    helper-net:
+    seeker-net:

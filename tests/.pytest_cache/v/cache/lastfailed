@@ -1,0 +1,4 @@
+{
+  "test_containers.py::test_answer": true,
+  "test_containers.py::test_proxy_config": true
+}
