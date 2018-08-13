@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# on the helper machine
+# place this file in ~/.bin/,
+# replace `<name>` with the help seekers name in the file name,
+# set variables accordingly in this file
+# and add the following line to your ~/.bashrc
+# [ -d ~/.bin ] && PATH=$PATH:~/.bin
+
+# name of the help seeker used in your .ssh/config
+HELP_SEEKER='<name>'
+
+VNCVIEWER=$( which vncviewer )
+
+[ ! -x "$VNCVIEWER" ] && echo 'No executable vncviewer found.' && exit 1
+
+ssh "$HELP_SEEKER" x11vnc -scale 3/4:fb -display :0 -scale_cursor 1 &
+sleep 5
+$VNCVIEWER localhost:5900

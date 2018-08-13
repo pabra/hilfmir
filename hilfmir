@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# on the help seekers machine
+# place this file in ~/.bin/ and add the following line to ~/.bashrc
+# [ -d ~/.bin ] && PATH=$PATH:~/.bin
+
+if [ "$1" = 'x11vnc' ]; then
+    x11vnc -scale 3/4:fb -display :0 -scale_cursor 1
+else
+    echo 'Connecting to SSH proxy...'
+    echo 'Press Ctrl+C to cancel'
+    ssh -N hilfmir-seeker-ssh-proxy
+fi
