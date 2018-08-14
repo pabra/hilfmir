@@ -115,6 +115,8 @@ Host <help-seeker-name>
     User <USER>
     HostName localhost
     Port 41300
+    LocalForward localhost:5900 localhost:5900
+    Compression yes
     IdentityFile ~/.ssh/helper
     IdentitiesOnly yes
 ```
